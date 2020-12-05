@@ -1,8 +1,9 @@
-
-def fib(n):
-    a,b=0,1;
-    while a<n:
-        print(a,end=' ');
-        a,b=b,a+b;
-    print()
-fib(1000)
+def f1():
+    print(x)
+def f2():
+    global x
+    x=50
+    print(x)
+x=10
+f2()
+f1()

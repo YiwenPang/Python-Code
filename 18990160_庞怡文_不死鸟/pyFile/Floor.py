@@ -1,6 +1,6 @@
 #coding=utf-8
 from pygame import sprite
-from resources.pythons import ResourceLoader
+from pyFile import ResourceLoader
 
 
 class Floor(sprite.Sprite):

@@ -1,10 +1,10 @@
 from pygame.locals import *  # 导入pygame库中的一些常量
 import sys
 
-from resources.pythons.Bird import *
+from pyFile.Bird import *
 import random
-from resources.pythons.Floor import Floor
-from resources.pythons.Pipe import Pipe
+from pyFile.Floor import Floor
+from pyFile.Pipe import Pipe
 
 SCREEN_WIDTH = 288
 SCREEN_HEIGHT = 512
@@ -25,7 +25,7 @@ def main():
     pygame.init()#初始化pygame
     pygame.mixer.init()#初始化用于加载和播放声音的pygame模块
 
-    pygame.mixer.music.load("resources/sounds/bgm.wav")#加载好日子
+    pygame.mixer.music.load("sounds/bgm.wav")#加载好日子
     pygame.mixer.music.play(-1)#循环播放好日子
 
     point_sound = ResourceLoader.get_sound("point.wav")#获得音频point

@@ -1,7 +1,7 @@
 import pygame
 from pygame import sprite
 
-from resources.pythons import ResourceLoader
+from pyFile import ResourceLoader
 
 
 class Bird(sprite.Sprite):
